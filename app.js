@@ -1,4 +1,4 @@
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.118.0';
+import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.118.0/+esm';
 import { SUPABASE_URL, SUPABASE_ANON_KEY } from './config.js';
 
 const configured = /^https:\/\//.test(SUPABASE_URL) && !SUPABASE_URL.includes('PASTE_') && SUPABASE_ANON_KEY.length > 20 && !SUPABASE_ANON_KEY.includes('PASTE_');
