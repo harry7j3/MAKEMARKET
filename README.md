@@ -4,7 +4,7 @@ MakeMarket is an early digital-marketplace MVP for original creations. The site 
 
 ## Deploy
 
-The GitHub Actions workflow in `.github/workflows/pages.yml` publishes the repository with GitHub Pages when a commit reaches `main`, and enables Pages on the first run. The published address will be `https://harry7j3.github.io/MAKEMARKET/`.
+Before the first deploy, the repository owner must open **Settings → Pages** and select **GitHub Actions** as the build and deployment source. The workflow in `.github/workflows/pages.yml` then publishes the site when a commit reaches `main`. The published address will be `https://harry7j3.github.io/MAKEMARKET/`.
 
 For email confirmation, password reset, and OAuth to return to the hosted site, a project owner must set the Supabase Auth Site URL to `https://harry7j3.github.io/MAKEMARKET/` and add that same URL to the allowed redirect URLs in Supabase Authentication URL Configuration. Google and Apple sign-in also need their own provider credentials configured in Supabase.
 
